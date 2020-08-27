@@ -211,7 +211,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         }
         String c = tvLoc.getText().toString();
 
-        String url = "http://api.openweathermap.org/data/2.5/weather?units=metric&q=" + c +"&appid=0673a71ee1dea7d1a2c3a0ba6e4c0de7";
+        String url = "http://api.openweathermap.org/data/2.5/weather?units=metric&q=" + c +"&appid= /* Insert Token */;
 
         MyTask t = new MyTask();
         t.execute(url);
