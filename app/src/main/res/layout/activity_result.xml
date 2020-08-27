@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8EFBA"
+    tools:context="com.example.parthdoshi.bmi.ResultActivity">
+
+    <TextView
+        android:id="@+id/tvWelcomeR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="30dp"
+        android:text="Welcome"
+        android:lines="2"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        android:textColor="#2C3A47"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvBMIValR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textColor="#2C3A47"
+        android:textSize="25dp"
+        android:layout_marginTop="31dp"
+        android:text="Your BMI is "
+        android:layout_below="@+id/tvWelcomeR"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvBMIMsgR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textColor="#2C3A47"
+        android:textSize="25dp"
+        android:layout_marginTop="26dp"
+        android:text="You are "
+        android:layout_below="@+id/tvBMIValR"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvRangeUR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Below 18.5 is Underweight"
+        android:fontFamily="monospace"
+        android:textColor="#2C3A47"
+        android:textSize="16dp"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/tvBMIMsgR"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvRangeNR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Between 18.5 and 25 is Normal"
+        android:fontFamily="monospace"
+        android:textColor="#2C3A47"
+        android:textSize="16dp"
+        android:layout_below="@+id/tvRangeUR"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvRangeOWR"
+        android:fontFamily="monospace"
+        android:textColor="#2C3A47"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Between 25 and 30 is Overweight"
+        android:layout_below="@+id/tvRangeNR"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvRangeOR"
+        android:fontFamily="monospace"
+        android:textColor="#2C3A47"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Above 30 is Obese"
+        android:layout_below="@+id/tvRangeOWR"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnBackR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:background="#EAB543"
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/btnShareR"
+        android:layout_alignLeft="@+id/tvRangeUR"
+        android:layout_alignStart="@+id/tvRangeUR" />
+
+    <Button
+        android:id="@+id/btnSaveR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:background="#EAB543"
+        android:layout_alignBaseline="@+id/btnBackR"
+        android:layout_alignBottom="@+id/btnBackR"
+        android:layout_alignRight="@+id/tvRangeUR"
+        android:layout_alignEnd="@+id/tvRangeUR" />
+
+    <Button
+        android:id="@+id/btnShareR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:background="#EAB543"
+        android:layout_marginBottom="17dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

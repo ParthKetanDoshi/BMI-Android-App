@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8EFBA"
+    tools:context="com.example.parthdoshi.bmi.RegisterActivity">
+
+    <TextView
+        android:id="@+id/tvPersonalDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textSize="45dp"
+        android:text="Personal Details"
+        android:lines="1"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="#2C3A47"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etPDName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/tvPersonalDetails"
+        android:layout_alignLeft="@+id/etPDAge"
+        android:layout_alignStart="@+id/etPDAge" />
+
+    <EditText
+        android:id="@+id/etPDAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Age"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_below="@+id/etPDName"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etPDContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etPDAge"
+        android:layout_alignRight="@+id/etPDAge"
+        android:layout_below="@+id/etPDAge"
+        android:layout_marginTop="21dp"
+        android:hint="Contact Number"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimary"
+        android:ems="10"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgSex"
+        android:orientation="horizontal"
+        android:layout_marginTop="67dp"
+        android:dividerPadding="10dp"
+        android:layout_below="@+id/etPDContact"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/rbPDMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/rbPDFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:text="Female" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:background="#EAB543"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/rgSex"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

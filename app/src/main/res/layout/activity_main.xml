@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8EFBA"
+    tools:context="com.example.parthdoshi.bmi.MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="30dp"
+        android:text="Welcome"
+        android:lines="2"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        android:textColor="#2C3A47"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvHtMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="Enter your Height:"
+        android:textStyle="bold"
+        android:textColor="#2C3A47"
+        android:layout_below="@+id/tvTitle"
+        android:layout_alignLeft="@+id/spnHtFt"
+        android:layout_alignStart="@+id/spnHtFt" />
+
+    <Spinner
+        android:id="@+id/spnHtFt"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:background="#EAB543"
+        android:textAlignment="center"
+        android:soundEffectsEnabled="true"
+        android:layout_marginTop="18dp"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/tvHtMsg"
+        android:layout_alignLeft="@+id/spnHtIn"
+        android:layout_alignStart="@+id/spnHtIn" />
+
+    <Spinner
+        android:id="@+id/spnHtIn"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:background="#EAB543"
+        android:textAlignment="center"
+        android:soundEffectsEnabled="true"
+        android:layout_marginTop="17dp"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/spnHtFt"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvWtMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2C3A47"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/spnHtIn"
+        android:layout_alignStart="@+id/spnHtIn"
+        android:layout_centerVertical="true"
+        android:text="Enter your Weight:" />
+
+    <EditText
+        android:id="@+id/etWt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvWtMsg"
+        android:layout_alignStart="@+id/tvWtMsg"
+        android:layout_below="@+id/tvWtMsg"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:textColor="#2C3A47"
+        android:hint="Enter Weight"
+        android:textColorHint="#CAD3C8"
+        android:background="#FFFFFF"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tvWtUnits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2C3A47"
+        android:textStyle="bold"
+        android:text="kgs"
+        android:layout_alignBaseline="@+id/etWt"
+        android:layout_alignBottom="@+id/etWt"
+        android:layout_alignRight="@+id/spnHtIn"
+        android:layout_alignEnd="@+id/spnHtIn" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:background="#EAB543"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:hapticFeedbackEnabled="true"
+        android:clickable="true"
+        android:text="Calculate"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/etWt"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnViewHistroy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View History"
+        android:background="#EAB543"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/btnCalculate"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   City"
+        android:textSize="15dp"
+        android:layout_marginTop="22dp"
+        android:textColor="#EAB543"
+        android:layout_below="@+id/btnViewHistroy"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/tvTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature   "
+        android:textSize="15dp"
+        android:textColor="#EAB543"
+        android:gravity="end"
+        android:layout_alignBaseline="@+id/tvLoc"
+        android:layout_alignBottom="@+id/tvLoc"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/ibMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/arrow_down_float"
+        android:background="@color/colorPrimaryDark"
+        android:tint="@color/colorPrimary"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:onClick="showPopup"
+        android:layout_alignTop="@+id/tvTitle"
+        android:layout_toRightOf="@+id/spnHtFt"
+        android:layout_toEndOf="@+id/spnHtFt"
+        android:layout_marginTop="22dp"
+        android:padding="5dp"/>
+
+</RelativeLayout>
